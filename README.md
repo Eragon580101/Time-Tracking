@@ -26,4 +26,4 @@ yarn add
 yarn dev
 ```
 
-## Try it out : [Time Tracking](https://warm-concha-a80f46.netlify.app/)
+## Try it out : [Time Tracking](https://ornate-starlight-40049e.netlify.app/)
