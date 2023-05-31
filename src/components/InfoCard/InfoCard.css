@@ -1,0 +1,96 @@
+.outer{
+    --_offset: 50px;
+    --_border-radius: 15px;
+    --_icon-image: url(./icon-work.svg);
+    --_icon-image-background: hsl(15, 100%, 70%);
+    --_font-size: 3.5rem;
+    --_width: 250px;
+
+    position: relative;
+    isolation: isolate;
+    margin-top: calc(var(--_offset));
+}
+
+.card{
+    background: var(--color);
+    width: var(--_width);
+    padding: 1.5rem;
+    border-radius: var(--_border-radius);
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+   --color: var(--color-hover);
+}
+
+.card__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__title-text{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card__body{
+    margin-top: 0.8rem;
+}
+
+.card__body-current{
+    font-size: var(--_font-size);
+    font-weight: 300;
+}
+
+.card__body-previous{
+    opacity: 0.7;
+    font-weight: 300;
+    color: hsl(236, 100%, 87%);
+}
+
+/* Top Icon */
+.card::before{
+    content:'';
+    display: block;
+    height: 70px;
+    width: 80px;
+    background: var(--_icon-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 10px;
+    top: calc(var(--_offset) * -1);
+    z-index: -100;
+    opacity: 0.5;
+}
+
+/* Background */
+.card::after{
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    position: absolute; 
+    background: var(--_icon-image-background);
+    border-radius: var(--_border-radius);
+    left: 0;
+    top: calc(var(--_offset) * -1);
+    z-index: -200;
+}
+
+
+@media screen and (width > 375px) and (width < 1440px) {
+    .outer{
+        --_font-size: 2rem;
+        --_width: 100%;
+        margin-top: calc(var(--_offset) / 2);
+    }
+
+    .card__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

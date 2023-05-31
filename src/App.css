@@ -1,0 +1,21 @@
+.app{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.info-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+
+@media screen and (width > 375px) and (width < 1440px){
+    .app{
+        grid-template-columns: 1fr;
+    }
+    .info-cards{
+        grid-template-columns: 1fr;
+    }
+}

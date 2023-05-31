@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root{
+    --profile-color: hsl(246, 80%, 60%);
+    --color: hsl(235, 46%, 20%); 
+    --color-hover: hsl(235, 45%, 61%);
+    --color-work: hsl(15, 100%, 70%);
+    --color-play: hsl(195, 74%, 62%);
+    --color-study: hsl(348, 100%, 68%);
+    --color-exercise: hsl(145, 58%, 55%);
+    --color-social: hsl(264, 64%, 52%);
+    --color-self-care: hsl(43, 84%, 65%);
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik';
+    line-height: 1.6;
+    color: #Fff;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin-inline: calc(50vh/2);
+    background-color: hsl(226, 43%, 10%);
+}
+
+@media screen and (width > 375px) and (width < 1440px){
+    body{
+        margin: 1.3rem;
+        display: block;
+    }
+}
+    
