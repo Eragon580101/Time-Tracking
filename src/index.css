@@ -21,10 +21,11 @@ body{
     font-family: 'Rubik';
     line-height: 1.6;
     color: #Fff;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    margin-inline: calc(50vh/2);
+    min-width: 100vw;
     background-color: hsl(226, 43%, 10%);
 }
 

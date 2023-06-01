@@ -60,6 +60,7 @@ function App() {
   };
 
   return (
+    <div>
     <div className="app">
       <ProfileCard setActive={handleActive} />
       <div className="info-cards">
@@ -74,6 +75,7 @@ function App() {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 }

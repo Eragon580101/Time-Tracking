@@ -70,7 +70,7 @@
 .card::after{
     content: '';
     display: block;
-    height: 50%;
+    height: 60%;
     width: 100%;
     position: absolute; 
     background: var(--_icon-image-background);
