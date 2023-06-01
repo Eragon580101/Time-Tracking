@@ -2,9 +2,8 @@
 .profile__card {
     --_font-size: 2.5rem;
   --_border-radius: 15px;
-  --_width: 200px;
+  --_width: 250px;
   width: var(--_width);
-  justify-self: center;
 }
 
 .profile__card__top {
